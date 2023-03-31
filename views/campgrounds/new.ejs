@@ -1,0 +1,54 @@
+<% layout("layouts/boilerplate") %><!--passess the below contents as body in the boilerplate(npm i ejsMate)-->
+<style>
+    .form{
+        max-width: 500px;
+        margin: auto;
+    }
+</style>    
+<div class="row">
+        <h1 class="text-center">New Campground</h1>
+        <div class="form">
+            <form action="/campgrounds" method="POST" class="validated-form" enctype="multipart/form-data" novalidate>
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="title" required>
+                    <div class="valid-feedback">
+                        Looks Good
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Location</label>
+                    <input class="form-control" type="text" id="location" name="location" required>
+                    <div class="valid-feedback">
+                        Looks Good
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="price">Price</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="price-label">@</span>
+                        <input type="text" class="form-control" placeholder="0.00" name="price" required id="price" aria-label="price" aria-describedby="price-label">
+                        <div class="valid-feedback">
+                            Looks Good
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="title">Description</label>
+                    <textarea class="form-control" type="text" id="description" required name="description"></textarea>
+                    <div class="valid-feedback">
+                        Looks Good
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="image">Upload Images</label>
+                    <input class="form-control" type="file" id="image" name="image" multiple required>
+                    <div class="valid-feedback">Looks Good</div>
+                </div>
+                <div class="mb-3">
+                <button class="btn btn-success">Add Campground</button>
+            </div>
+            </form>
+            <a href="/campgrounds">Back to all campgrounds</a>
+        </div>
+    </div>

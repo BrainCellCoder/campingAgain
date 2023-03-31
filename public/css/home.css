@@ -1,0 +1,52 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1532339142463-fd0a8979791a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FtcGluZ3xlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 0 0.05rem 0.1rem rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 5rem rgba(0,0,0,0.5);
+}
+
+.navbar{
+    display: flex;
+    color: #fff;
+    height: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 0.25rem 0;
+    color: rgba(255,255,255,0.7);
+    border-bottom:  solid transparent; 
+    transition: 0.2s ease;
+    margin-left: 20px;
+}
+
+.navbar a:hover{
+    border-bottom-color: #fff;
+}
+
+.navbar .menu .active{
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.hero{
+    color: white;
+    margin-top: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero > div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hero button{
+    background-color: #fff;
+    color: black;
+}

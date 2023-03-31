@@ -1,0 +1,39 @@
+<% layout("layouts/boilerplate") %>
+
+<style>
+    .card{
+        max-width: 500px;
+        margin: auto;
+
+    }
+</style>
+<div class="card shadow">
+    <img class="card-img-top" src="https://media.istockphoto.com/id/677059814/photo/one-man-camping-at-night-with-phone.jpg?s=170667a&w=0&k=20&c=Q22SHvQ51F47FY5maxw3yNwVxtqgxoUC_bgbTGPGz_A=" alt="">
+    <div class="card-body">
+        <h5 class="card-title">Register</h5>
+        <form action="/register" method="POST" class="validated-form" novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-control" type="text" id="username" name="username" autofocus required>
+                <div class="valid-feedback">
+                    Looks Good
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" id="email" name="email" required>
+                <div class="valid-feedback">
+                    Looks Good
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="text" id="password" name="password" required>
+                <div class="valid-feedback">
+                    Looks Good
+                </div>
+            </div>
+            <button class="btn btn-success" style="width: 100%;">Register</button>
+        </form>
+</div>
+</div>
